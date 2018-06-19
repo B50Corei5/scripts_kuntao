@@ -29,8 +29,6 @@ echo -e "${CLR_BLD_GRN}Setting up ccache${CLR_RST}"
 ccache -M 100G
 export USE_CCACHE=1
 echo -e ""
-echo -e "${CLR_BLD_GRN}Setting up screen{CLR_RST}"
-screen
 echo -e "${CLR_BLD_GRN}Syncing firehound rom sources${CLR_RST}"
 repo init -u git://github.com/FireHound/platform_manifest.git -b o8.1
 repo sync -j8
