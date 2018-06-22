@@ -1,5 +1,6 @@
 make installclean
 source build/envsetup.sh
-lunch fh_kuntao-userdebug
-brunch fh_kuntao-userdebug -j8
+lunch 
+5
+brunch bootleg_kuntao-userdebug
 sudo shutdown -h now
