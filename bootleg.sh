@@ -43,3 +43,8 @@ echo -e ""
 echo -e "${CLR_BLD_GRN}Deleting Doze to avoid build errors${CLR_RST}"
 rm -rf device/lenovo/kuntao/doze
 echo -e ""
+echo -e "${CLR_BLD_GRN}Making official${CLR_RST}"
+export DEVICE_MAINTAINERS=ThatCubeGuy:B50Corei5
+export BOOTLEG_BUILD_TYPE=Shishufied
+
+
