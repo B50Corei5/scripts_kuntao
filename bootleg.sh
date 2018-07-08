@@ -24,7 +24,8 @@ CLR_BLD_YLW=$CLR_RST$CLR_BLD$(tput setaf 3) #  yellow, bold
 CLR_BLD_BLU=$CLR_RST$CLR_BLD$(tput setaf 4) #  blue, bold
 CLR_BLD_PPL=$CLR_RST$CLR_BLD$(tput setaf 5) #  purple, bold
 CLR_BLD_CYA=$CLR_RST$CLR_BLD$(tput setaf 6) #  cyan, bold
-
+echo -e "${CLR_BLD_GRN}Screen something?${CLR_RST}"
+screen
 echo -e "${CLR_BLD_GRN}Setting up ccache${CLR_RST}"
 ccache -M 100G
 export USE_CCACHE=1
@@ -35,7 +36,7 @@ repo sync -f --force-sync --no-clone-bundle -j8
 echo -e ""
 echo -e "${CLR_BLD_GRN}Cloning device repos...${CLR_RST}"
 git clone https://github.com/B50Corei5/UnofficialRoms -b bootleg-o device/lenovo/kuntao
-git clone https://github.com/kuntao-development/android_vendor_lenovo_kuntao -b lineage-15.1 vendor/lenovo/kuntao
+git clone https://github.com/B50Corei5/proprietary_vendor_lenovo_kuntao -b dot-o vendor/lenovo/kuntao
 git clone https://github.com/arghyac35/android_kernel_lenovo_msm8953 -b 8.1.x kernel/lenovo/msm8953
 echo -e "${CLR_BLD_GRN}Cloning Complete...${CLR_RST}"
 echo -e ""
