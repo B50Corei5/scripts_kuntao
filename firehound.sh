@@ -42,10 +42,4 @@ echo -e ""
 echo -e "${CLR_BLD_GRN}Deleting Doze to avoid build errors${CLR_RST}"
 rm -rf device/lenovo/kuntao/doze
 echo -e ""
-echo -e "${CLR_BLD_GRN}Compilation starting${CLR_RST}"
-source build/envsetup.sh
-lunch fh_kuntao-userdebug
-brunch fh_kuntao-userdebug -j8
-eco -e ""
-echo -e "${CLR_BLD_GRN}Closing the server - Task Complete${CLR_RST}"
-sudo shutdown -h now
+
