@@ -27,7 +27,7 @@ CLR_BLD_CYA=$CLR_RST$CLR_BLD$(tput setaf 6) #  cyan, bold
 
 
 echo -e "${CLR_BLD_GRN}Cloning device repos...${CLR_RST}"
-git clone https://github.com/dotOS-Devices/android_device_lenovo_kuntao.git -b dot-o device/lenovo/kuntao
+git clone https://github.com/B50Corei5/android_device_lenovo_kuntao -b dot-o device/lenovo/kuntao
 git clone https://github.com/dotOS-Devices/android_kernel_lenovo_kuntao.git -b dot-o kernel/lenovo/msm8953
 git clone https://github.com/dotOS-Devices/proprietary_vendor_lenovo_kuntao.git -b dot-o vendor/lenovo
 echo -e "${CLR_BLD_GRN}Cloning Complete...${CLR_RST}"
