@@ -30,9 +30,9 @@ echo -e "${CLR_BLD_GRN}██████╔╝██║  ██║██║  �
 echo -e "${CLR_BLD_GRN}╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_GRN}Cloning device repos...${CLR_RST}"
-git clone https://github.com/kuntao-development/android_device_lenovo_kuntao -b lineage-15.1 device/lenovo/kuntao
+git clone https://github.com/LineageOS/android_device_lenovo_kuntao -b lineage-15.1 device/lenovo/kuntao
 git clone https://github.com/arghyac35/android_vendor_lenovo_kuntao -b oreo.1 vendor/lenovo/kuntao
-git clone https://github.com/arghyac35/android_kernel_lenovo_msm8953 -b 8.1.x kernel/lenovo/msm8953
+git clone https://github.com/kuntao-development/android_vendor_lenovo_kuntao -b lineage-15.1 kernel/lenovo/msm8953
 echo -e "${CLR_BLD_GRN}Cloning Complete...${CLR_RST}"
 echo -e ""
 echo -e "${CLR_BLD_GRN}Cloning Complete...${CLR_RST}"
